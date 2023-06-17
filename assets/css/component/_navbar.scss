@@ -1,0 +1,32 @@
+/* Design de la navigation */
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0; 
+    
+    ul {
+        list-style: none;
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        a {
+            color: $white-color;
+            font-size: 25px;
+            font-weight: 500;
+            font-family: 'rajdhani';
+            &:hover {
+                color: $yellow-color;
+            }
+        }
+    }
+    .logo:hover{
+        -webkit-filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+        filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+        color: var(--yellow-color);
+    }
+}
