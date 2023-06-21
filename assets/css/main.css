@@ -403,7 +403,7 @@ footer .social-item {
 
 #hero-game {
   background-position: top center;
-  background-image: url(../../Illustrations_game/Batgame_1.png);
+  background-image: url("../Illustrations_game/Batgame_1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(130vh - 30px);
@@ -427,6 +427,50 @@ footer .social-item {
   margin: 0 auto;
   width: 80px;
   margin-top: 20rem;
+}
+
+.wrapped {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapped h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.wrapped .questions .nombreDeQuestions {
+  margin: 20px 0;
+}
+.wrapped .questions .card-quizz {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+}
+.wrapped .questions .card-quizz .card-image img {
+  width: 80%;
+}
+.wrapped .questions .card-quizz .question-quizz {
+  margin: 20px 0;
+}
+.wrapped .questions .card-quizz .qcm {
+  background-color: darkgray;
+  margin: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+.wrapped .btn-game {
+  padding: 40px 0;
+}
+.wrapped .btn-game button {
+  background: linear-gradient(143deg, rgba(121, 120, 118, 0.5), rgba(228, 122, 1, 0.6) 80%);
+  padding: 15px 30px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.wrapped .btn-game button:hover {
+  background: linear-gradient(143deg, rgb(121, 120, 118), rgb(167, 89, 0) 80%);
 }
 
 .scroll {
