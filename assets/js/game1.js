@@ -30,6 +30,7 @@ $(document).ready(function () {
                     if(currentQuiz < (totalQuiz - 1)) {
         
                         if(isChoose) {
+                            
                             $('#quiz-box').slideUp(1000).slideDown(1000);
                             currentQuiz++;
         
@@ -111,6 +112,7 @@ $(document).ready(function () {
             $('#error-message').css("color", "red").text("Choisissez une reponse");
             return [false, userResponse];
         } else {
+            $('#error-message').css("color", "black").text("");
             return [true, userResponse];
         }
     }
