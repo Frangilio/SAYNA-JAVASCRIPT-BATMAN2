@@ -11,17 +11,22 @@ nav {
         list-style: none;
         li {
             display: inline;
-            margin-right: 10px;
         }
 
         a {
+            text-decoration-line: none;
             color: $white-color;
-            font-size: 25px;
-            font-weight: 500;
+            font-size: 30px;
             font-family: 'rajdhani';
+            padding-right: 30px;
             &:hover {
                 color: $yellow-color;
             }
+            
+        }
+        .active {
+            text-decoration: underline;  
+            font-weight: bold;
         }
     }
     .logo:hover{

@@ -87,16 +87,21 @@ nav ul {
 }
 nav ul li {
   display: inline;
-  margin-right: 10px;
 }
 nav ul a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   color: #FFF;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 30px;
   font-family: "rajdhani";
+  padding-right: 30px;
 }
 nav ul a:hover {
   color: #FFFF00;
+}
+nav ul .active {
+  text-decoration: underline;
+  font-weight: bold;
 }
 nav .logo:hover {
   filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
@@ -489,23 +494,44 @@ footer .social-item {
   color: var(--yellow-color);
 }
 
-.popupbox {
-  background: linear-gradient(143deg, rgb(237, 222, 191), rgb(25, 88, 125) 80%);
+.popup-result {
+  background: linear-gradient(143deg, black, #6a4423);
   width: 50%;
   margin: auto;
   text-align: center;
   position: fixed;
   top: 250px;
-  left: 300px;
-  display: none;
-}
-.popupbox .inside {
-  padding: 50px;
-  margin: 30px;
-  background-color: blue;
+  left: 400px;
   border-radius: 20px;
   box-shadow: 2px 2px 40px black;
+  display: none;
 }
-.popupbox .inside h1 {
+.popup-result .box-resultat {
+  padding: 50px;
+  margin: 30px;
+  background-color: transparent;
+}
+.popup-result .box-resultat h1 {
+  font-family: "rajdhani";
   text-transform: uppercase;
+  -webkit-text-decoration: solid underline white 2px;
+          text-decoration: solid underline white 2px;
+}
+.popup-result .box-resultat p {
+  font-family: "space-grotesk";
+  font-size: 20px;
+  margin: 50px 0;
+}
+.popup-result .box-resultat .btn-quiz {
+  padding: 40px 0;
+  background: linear-gradient(143deg, rgba(121, 120, 118, 0.5), rgba(228, 122, 1, 0.6) 80%);
+  padding: 15px 30px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+.popup-result .box-resultat .btn-quiz:hover {
+  background: linear-gradient(143deg, rgb(121, 120, 118), rgb(167, 89, 0) 80%);
 }/*# sourceMappingURL=main.css.map */
